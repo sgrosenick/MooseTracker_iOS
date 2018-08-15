@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB1D69B92108423D00CF8CA1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D69B82108423D00CF8CA1 /* Theme.swift */; };
+		AB1D69BB2108438F00CF8CA1 /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB1D69BA2108438F00CF8CA1 /* Georgia.ttf */; };
+		AB1D69BD2108463B00CF8CA1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1D69BC2108463B00CF8CA1 /* Colors.xcassets */; };
+		AB2E3BD0210CD7F900403873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */; };
+		AB2E3BD4210E694A00403873 /* CreateSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD3210E694A00403873 /* CreateSighting.swift */; };
+		AB2E3BD6211BF2A400403873 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD5211BF2A400403873 /* MapViewController.swift */; };
+		ABA3A2DC20FED31D001C856E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DB20FED31D001C856E /* AppDelegate.swift */; };
+		ABA3A2DE20FED31D001C856E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DD20FED31D001C856E /* ViewController.swift */; };
+		ABA3A2E120FED31D001C856E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA3A2DF20FED31D001C856E /* Main.storyboard */; };
+		ABA3A2E320FED31F001C856E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA3A2E220FED31F001C856E /* Assets.xcassets */; };
+		ABA3A2F120FED320001C856E /* AnchorageMooseTracker_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2F020FED320001C856E /* AnchorageMooseTracker_iOSTests.swift */; };
+		ABA3A2FC20FED320001C856E /* AnchorageMooseTracker_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2FB20FED320001C856E /* AnchorageMooseTracker_iOSUITests.swift */; };
+		ABA3A30A20FED334001C856E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ABA3A30920FED334001C856E /* Podfile */; };
+		C61AF87D4EE7F8DC36CCCF45 /* libPods-AnchorageMooseTracker_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A444D4D493E9141909CB60 /* libPods-AnchorageMooseTracker_iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABA3A2ED20FED31F001C856E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA3A2D020FED31D001C856E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA3A2D720FED31D001C856E;
+			remoteInfo = AnchorageMooseTracker_iOS;
+		};
+		ABA3A2F820FED320001C856E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA3A2D020FED31D001C856E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA3A2D720FED31D001C856E;
+			remoteInfo = AnchorageMooseTracker_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26DB44F4A1BD011976B367AB /* Pods-AnchorageMooseTracker_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnchorageMooseTracker_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnchorageMooseTracker_iOS/Pods-AnchorageMooseTracker_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AB1D69B82108423D00CF8CA1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AB1D69BA2108438F00CF8CA1 /* Georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Georgia.ttf; sourceTree = "<group>"; };
+		AB1D69BC2108463B00CF8CA1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB2E3BD3210E694A00403873 /* CreateSighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSighting.swift; sourceTree = "<group>"; };
+		AB2E3BD5211BF2A400403873 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ABA3A2D820FED31D001C856E /* AnchorageMooseTracker_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchorageMooseTracker_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA3A2DB20FED31D001C856E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABA3A2DD20FED31D001C856E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABA3A2E020FED31D001C856E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABA3A2E220FED31F001C856E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABA3A2E720FED31F001C856E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA3A2EC20FED31F001C856E /* AnchorageMooseTracker_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnchorageMooseTracker_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA3A2F020FED320001C856E /* AnchorageMooseTracker_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorageMooseTracker_iOSTests.swift; sourceTree = "<group>"; };
+		ABA3A2F220FED320001C856E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA3A2F720FED320001C856E /* AnchorageMooseTracker_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnchorageMooseTracker_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA3A2FB20FED320001C856E /* AnchorageMooseTracker_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorageMooseTracker_iOSUITests.swift; sourceTree = "<group>"; };
+		ABA3A2FD20FED320001C856E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA3A30920FED334001C856E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBE23A2A209D29A4BBF28F41 /* Pods-AnchorageMooseTracker_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnchorageMooseTracker_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnchorageMooseTracker_iOS/Pods-AnchorageMooseTracker_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D0A444D4D493E9141909CB60 /* libPods-AnchorageMooseTracker_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnchorageMooseTracker_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABA3A2D520FED31D001C856E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61AF87D4EE7F8DC36CCCF45 /* libPods-AnchorageMooseTracker_iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2E920FED31F001C856E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2F420FED320001C856E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4785F4D608CC2E263FA47BDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBE23A2A209D29A4BBF28F41 /* Pods-AnchorageMooseTracker_iOS.debug.xcconfig */,
+				26DB44F4A1BD011976B367AB /* Pods-AnchorageMooseTracker_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BA5BE217F6AF7952756A14F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0A444D4D493E9141909CB60 /* libPods-AnchorageMooseTracker_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1D69B72108422100CF8CA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D69BA2108438F00CF8CA1 /* Georgia.ttf */,
+				AB1D69B82108423D00CF8CA1 /* Theme.swift */,
+				AB1D69BC2108463B00CF8CA1 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABA3A2CF20FED31D001C856E = {
+			isa = PBXGroup;
+			children = (
+				ABA3A30920FED334001C856E /* Podfile */,
+				ABA3A2DA20FED31D001C856E /* AnchorageMooseTracker_iOS */,
+				ABA3A2EF20FED31F001C856E /* AnchorageMooseTracker_iOSTests */,
+				ABA3A2FA20FED320001C856E /* AnchorageMooseTracker_iOSUITests */,
+				ABA3A2D920FED31D001C856E /* Products */,
+				4785F4D608CC2E263FA47BDB /* Pods */,
+				5BA5BE217F6AF7952756A14F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABA3A2D920FED31D001C856E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA3A2D820FED31D001C856E /* AnchorageMooseTracker_iOS.app */,
+				ABA3A2EC20FED31F001C856E /* AnchorageMooseTracker_iOSTests.xctest */,
+				ABA3A2F720FED320001C856E /* AnchorageMooseTracker_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA3A2DA20FED31D001C856E /* AnchorageMooseTracker_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D69B72108422100CF8CA1 /* Resources */,
+				ABA3A30B20FED60C001C856E /* Model */,
+				ABA3A30C20FED613001C856E /* View */,
+				ABA3A2DB20FED31D001C856E /* AppDelegate.swift */,
+				ABA3A2DF20FED31D001C856E /* Main.storyboard */,
+				ABA3A2E220FED31F001C856E /* Assets.xcassets */,
+				ABA3A2E720FED31F001C856E /* Info.plist */,
+				AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */,
+			);
+			path = AnchorageMooseTracker_iOS;
+			sourceTree = "<group>";
+		};
+		ABA3A2EF20FED31F001C856E /* AnchorageMooseTracker_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABA3A2F020FED320001C856E /* AnchorageMooseTracker_iOSTests.swift */,
+				ABA3A2F220FED320001C856E /* Info.plist */,
+			);
+			path = AnchorageMooseTracker_iOSTests;
+			sourceTree = "<group>";
+		};
+		ABA3A2FA20FED320001C856E /* AnchorageMooseTracker_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABA3A2FB20FED320001C856E /* AnchorageMooseTracker_iOSUITests.swift */,
+				ABA3A2FD20FED320001C856E /* Info.plist */,
+			);
+			path = AnchorageMooseTracker_iOSUITests;
+			sourceTree = "<group>";
+		};
+		ABA3A30B20FED60C001C856E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABA3A30C20FED613001C856E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABA3A2DD20FED31D001C856E /* ViewController.swift */,
+				AB2E3BD3210E694A00403873 /* CreateSighting.swift */,
+				AB2E3BD5211BF2A400403873 /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABA3A2D720FED31D001C856E /* AnchorageMooseTracker_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA3A30020FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOS" */;
+			buildPhases = (
+				2430DA23107AED8ED02D8CA0 /* [CP] Check Pods Manifest.lock */,
+				ABA3A2D420FED31D001C856E /* Sources */,
+				ABA3A2D520FED31D001C856E /* Frameworks */,
+				ABA3A2D620FED31D001C856E /* Resources */,
+				FBE27E8C413B7AFE2389A1F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnchorageMooseTracker_iOS;
+			productName = AnchorageMooseTracker_iOS;
+			productReference = ABA3A2D820FED31D001C856E /* AnchorageMooseTracker_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABA3A2EB20FED31F001C856E /* AnchorageMooseTracker_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA3A30320FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOSTests" */;
+			buildPhases = (
+				ABA3A2E820FED31F001C856E /* Sources */,
+				ABA3A2E920FED31F001C856E /* Frameworks */,
+				ABA3A2EA20FED31F001C856E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA3A2EE20FED31F001C856E /* PBXTargetDependency */,
+			);
+			name = AnchorageMooseTracker_iOSTests;
+			productName = AnchorageMooseTracker_iOSTests;
+			productReference = ABA3A2EC20FED31F001C856E /* AnchorageMooseTracker_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABA3A2F620FED320001C856E /* AnchorageMooseTracker_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA3A30620FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOSUITests" */;
+			buildPhases = (
+				ABA3A2F320FED320001C856E /* Sources */,
+				ABA3A2F420FED320001C856E /* Frameworks */,
+				ABA3A2F520FED320001C856E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA3A2F920FED320001C856E /* PBXTargetDependency */,
+			);
+			name = AnchorageMooseTracker_iOSUITests;
+			productName = AnchorageMooseTracker_iOSUITests;
+			productReference = ABA3A2F720FED320001C856E /* AnchorageMooseTracker_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABA3A2D020FED31D001C856E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Samuel Grosenick";
+				TargetAttributes = {
+					ABA3A2D720FED31D001C856E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					ABA3A2EB20FED31F001C856E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ABA3A2D720FED31D001C856E;
+					};
+					ABA3A2F620FED320001C856E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ABA3A2D720FED31D001C856E;
+					};
+				};
+			};
+			buildConfigurationList = ABA3A2D320FED31D001C856E /* Build configuration list for PBXProject "AnchorageMooseTracker_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABA3A2CF20FED31D001C856E;
+			productRefGroup = ABA3A2D920FED31D001C856E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABA3A2D720FED31D001C856E /* AnchorageMooseTracker_iOS */,
+				ABA3A2EB20FED31F001C856E /* AnchorageMooseTracker_iOSTests */,
+				ABA3A2F620FED320001C856E /* AnchorageMooseTracker_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABA3A2D620FED31D001C856E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA3A2E320FED31F001C856E /* Assets.xcassets in Resources */,
+				ABA3A30A20FED334001C856E /* Podfile in Resources */,
+				AB1D69BD2108463B00CF8CA1 /* Colors.xcassets in Resources */,
+				AB2E3BD0210CD7F900403873 /* LaunchScreen.storyboard in Resources */,
+				ABA3A2E120FED31D001C856E /* Main.storyboard in Resources */,
+				AB1D69BB2108438F00CF8CA1 /* Georgia.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2EA20FED31F001C856E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2F520FED320001C856E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2430DA23107AED8ED02D8CA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnchorageMooseTracker_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE27E8C413B7AFE2389A1F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnchorageMooseTracker_iOS/Pods-AnchorageMooseTracker_iOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnchorageMooseTracker_iOS/Pods-AnchorageMooseTracker_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABA3A2D420FED31D001C856E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2E3BD4210E694A00403873 /* CreateSighting.swift in Sources */,
+				AB1D69B92108423D00CF8CA1 /* Theme.swift in Sources */,
+				ABA3A2DE20FED31D001C856E /* ViewController.swift in Sources */,
+				AB2E3BD6211BF2A400403873 /* MapViewController.swift in Sources */,
+				ABA3A2DC20FED31D001C856E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2E820FED31F001C856E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA3A2F120FED320001C856E /* AnchorageMooseTracker_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA3A2F320FED320001C856E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA3A2FC20FED320001C856E /* AnchorageMooseTracker_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABA3A2EE20FED31F001C856E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABA3A2D720FED31D001C856E /* AnchorageMooseTracker_iOS */;
+			targetProxy = ABA3A2ED20FED31F001C856E /* PBXContainerItemProxy */;
+		};
+		ABA3A2F920FED320001C856E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABA3A2D720FED31D001C856E /* AnchorageMooseTracker_iOS */;
+			targetProxy = ABA3A2F820FED320001C856E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABA3A2DF20FED31D001C856E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA3A2E020FED31D001C856E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABA3A2FE20FED320001C856E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABA3A2FF20FED320001C856E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABA3A30120FED320001C856E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE23A2A209D29A4BBF28F41 /* Pods-AnchorageMooseTracker_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABA3A30220FED320001C856E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DB44F4A1BD011976B367AB /* Pods-AnchorageMooseTracker_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABA3A30420FED320001C856E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnchorageMooseTracker_iOS.app/AnchorageMooseTracker_iOS";
+			};
+			name = Debug;
+		};
+		ABA3A30520FED320001C856E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnchorageMooseTracker_iOS.app/AnchorageMooseTracker_iOS";
+			};
+			name = Release;
+		};
+		ABA3A30720FED320001C856E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnchorageMooseTracker_iOS;
+			};
+			name = Debug;
+		};
+		ABA3A30820FED320001C856E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnchorageMooseTracker_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnchorageMooseTracker-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnchorageMooseTracker_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABA3A2D320FED31D001C856E /* Build configuration list for PBXProject "AnchorageMooseTracker_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA3A2FE20FED320001C856E /* Debug */,
+				ABA3A2FF20FED320001C856E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA3A30020FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA3A30120FED320001C856E /* Debug */,
+				ABA3A30220FED320001C856E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA3A30320FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA3A30420FED320001C856E /* Debug */,
+				ABA3A30520FED320001C856E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA3A30620FED320001C856E /* Build configuration list for PBXNativeTarget "AnchorageMooseTracker_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA3A30720FED320001C856E /* Debug */,
+				ABA3A30820FED320001C856E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABA3A2D020FED31D001C856E /* Project object */;
+}
