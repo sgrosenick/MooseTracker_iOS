@@ -13,6 +13,7 @@
 		AB2E3BD0210CD7F900403873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */; };
 		AB2E3BD4210E694A00403873 /* CreateSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD3210E694A00403873 /* CreateSighting.swift */; };
 		AB2E3BD6211BF2A400403873 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD5211BF2A400403873 /* MapViewController.swift */; };
+		AB2E3BD8212515C200403873 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2E3BD7212515C200403873 /* CoreLocation.framework */; };
 		ABA3A2DC20FED31D001C856E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DB20FED31D001C856E /* AppDelegate.swift */; };
 		ABA3A2DE20FED31D001C856E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DD20FED31D001C856E /* ViewController.swift */; };
 		ABA3A2E120FED31D001C856E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA3A2DF20FED31D001C856E /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2E3BD3210E694A00403873 /* CreateSighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSighting.swift; sourceTree = "<group>"; };
 		AB2E3BD5211BF2A400403873 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AB2E3BD7212515C200403873 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ABA3A2D820FED31D001C856E /* AnchorageMooseTracker_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchorageMooseTracker_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA3A2DB20FED31D001C856E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA3A2DD20FED31D001C856E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2E3BD8212515C200403873 /* CoreLocation.framework in Frameworks */,
 				C61AF87D4EE7F8DC36CCCF45 /* libPods-AnchorageMooseTracker_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,7 @@
 		5BA5BE217F6AF7952756A14F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB2E3BD7212515C200403873 /* CoreLocation.framework */,
 				D0A444D4D493E9141909CB60 /* libPods-AnchorageMooseTracker_iOS.a */,
 			);
 			name = Frameworks;
