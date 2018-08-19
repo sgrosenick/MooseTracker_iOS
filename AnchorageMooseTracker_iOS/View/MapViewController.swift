@@ -17,8 +17,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var currentLocation: CLLocation?
     var mapView: GMSMapView!
     var placesClient: GMSPlacesClient!
-    var zoomLevel: Float = 15.0
-    
+    var zoomLevel: Float = 18.0
     
     
     override func viewDidLoad() {
@@ -41,7 +40,31 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.delegate = self
         view = mapView
-
+        
+        //create Set Location button
+        let setLocationbtn = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
+//        let verticalCenter: CGFloat = UIScreen.main.bounds.size.height / 6
+//        let horizontalCenter: CGFloat = UIScreen.main.bounds.midX
+//        setLocationbtn.center = CGPoint(x: horizontalCenter, y: verticalCenter)
+        setLocationbtn.backgroundColor = Theme.tint
+        setLocationbtn.setTitle("Set Location", for: .normal)
+        setLocationbtn.setTitleColor(UIColor.white, for: .normal)
+        setLocationbtn.setTitleColor(UIColor.lightGray, for: .highlighted)
+        setLocationbtn.layer.cornerRadius = 10
+        setLocationbtn.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
+        self.view.addSubview(setLocationbtn)
+        
+        setLocationbtn.translatesAutoresizingMaskIntoConstraints = false
+        
+        setLocationbtn.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        setLocationbtn.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        setLocationbtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        setLocationbtn.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20).isActive = true
+        
+    }
+    
+    @objc func buttonPressed(sender: UIButton) {
+        print("The button was pressed")
     }
     
     //Allows user to add marker by tapping on the map
