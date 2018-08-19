@@ -19,12 +19,14 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
+    
+    
     override func viewDidLoad() {
         
         //show current location
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         locationManager.delegate = self as CLLocationManagerDelegate
@@ -33,14 +35,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         //create map
         let camera = GMSCameraPosition.camera(withLatitude: 61.172387, longitude: -149.873818, zoom: 12)
-        mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.delegate = self
         view = mapView
-        
+
     }
     
+    //Allows user to add marker by tapping on the map
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         //Check to see if there already is a marker on the map
         if marker == marker {
