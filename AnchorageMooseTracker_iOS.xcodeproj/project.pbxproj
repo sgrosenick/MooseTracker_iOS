@@ -14,6 +14,7 @@
 		AB2E3BD4210E694A00403873 /* CreateSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD3210E694A00403873 /* CreateSighting.swift */; };
 		AB2E3BD6211BF2A400403873 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E3BD5211BF2A400403873 /* MapViewController.swift */; };
 		AB2E3BD8212515C200403873 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2E3BD7212515C200403873 /* CoreLocation.framework */; };
+		AB459710212A3D3F008EC026 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45970F212A3D3F008EC026 /* NotificationNameExtension.swift */; };
 		ABA3A2DC20FED31D001C856E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DB20FED31D001C856E /* AppDelegate.swift */; };
 		ABA3A2DE20FED31D001C856E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3A2DD20FED31D001C856E /* ViewController.swift */; };
 		ABA3A2E120FED31D001C856E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA3A2DF20FED31D001C856E /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		AB2E3BD3210E694A00403873 /* CreateSighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSighting.swift; sourceTree = "<group>"; };
 		AB2E3BD5211BF2A400403873 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AB2E3BD7212515C200403873 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AB45970F212A3D3F008EC026 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		ABA3A2D820FED31D001C856E /* AnchorageMooseTracker_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnchorageMooseTracker_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA3A2DB20FED31D001C856E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA3A2DD20FED31D001C856E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				ABA3A2E220FED31F001C856E /* Assets.xcassets */,
 				ABA3A2E720FED31F001C856E /* Info.plist */,
 				AB2E3BCF210CD7F900403873 /* LaunchScreen.storyboard */,
+				AB45970F212A3D3F008EC026 /* NotificationNameExtension.swift */,
 			);
 			path = AnchorageMooseTracker_iOS;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				AB2E3BD4210E694A00403873 /* CreateSighting.swift in Sources */,
 				AB1D69B92108423D00CF8CA1 /* Theme.swift in Sources */,
 				ABA3A2DE20FED31D001C856E /* ViewController.swift in Sources */,
+				AB459710212A3D3F008EC026 /* NotificationNameExtension.swift in Sources */,
 				AB2E3BD6211BF2A400403873 /* MapViewController.swift in Sources */,
 				ABA3A2DC20FED31D001C856E /* AppDelegate.swift in Sources */,
 			);

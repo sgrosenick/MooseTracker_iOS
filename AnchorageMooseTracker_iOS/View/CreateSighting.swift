@@ -33,6 +33,11 @@ class CreateSighting: UIViewController {
         locButton.backgroundColor = Theme.tint
         locButton.setTitleColor(UIColor.white, for: .normal)
         locButton.layer.cornerRadius = 10
+        
+        //setup Notification Center observer
+        NotificationCenter.default.addObserver(forName: Notification.Name.mooseLocation, object: nil, queue: OperationQueue.main) { (notification) in
+            
+        }
 
     }
     

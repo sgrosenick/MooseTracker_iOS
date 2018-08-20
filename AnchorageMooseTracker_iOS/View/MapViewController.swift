@@ -18,6 +18,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var mapView: GMSMapView!
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 18.0
+    let setLocationbtn = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
+    let locationInstruction = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
     
     
     override func viewDidLoad() {
@@ -42,10 +44,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         view = mapView
         
         //create Set Location button
-        let setLocationbtn = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
-//        let verticalCenter: CGFloat = UIScreen.main.bounds.size.height / 6
-//        let horizontalCenter: CGFloat = UIScreen.main.bounds.midX
-//        setLocationbtn.center = CGPoint(x: horizontalCenter, y: verticalCenter)
         setLocationbtn.backgroundColor = Theme.tint
         setLocationbtn.setTitle("Set Location", for: .normal)
         setLocationbtn.setTitleColor(UIColor.white, for: .normal)
@@ -60,11 +58,27 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         setLocationbtn.widthAnchor.constraint(equalToConstant: 150).isActive = true
         setLocationbtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
         setLocationbtn.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20).isActive = true
+        setLocationbtn.isHidden = true
+        
+        //create instruction label
+        locationInstruction.font = UIFont(name: Theme.mainFontName, size: 17)
+        locationInstruction.text = "Tap on map to set location"
+        self.view.addSubview(locationInstruction)
+        
+        locationInstruction.translatesAutoresizingMaskIntoConstraints = false
+        
+        locationInstruction.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        locationInstruction.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        locationInstruction.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        locationInstruction.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20).isActive = true
         
     }
     
     @objc func buttonPressed(sender: UIButton) {
-        print("The button was pressed")
+        let latString: String = String(format: "%f", marker.position.latitude)
+        let lonString: String = String(format: "%f", marker.position.longitude)
+        print("Latitude: " + latString + ", Longitude: " + lonString)
+        NotificationCenter.default.post(name: .mooseLocation, object: self)
     }
     
     //Allows user to add marker by tapping on the map
@@ -78,6 +92,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         marker = GMSMarker(position: coordinate)
         marker.title = "Moose here!"
         marker.map = mapView
+        locationInstruction.isHidden = true
+        setLocationbtn.isHidden = false
+        
    }
 }
 
