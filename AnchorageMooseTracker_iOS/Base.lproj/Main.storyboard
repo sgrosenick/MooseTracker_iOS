@@ -73,48 +73,48 @@
         <!--Create Sighting-->
         <scene sceneID="Jz7-RK-P6V">
             <objects>
-                <viewController id="Ujs-Ni-SiF" customClass="CreateSighting" customModule="AnchorageMooseTracker_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gC2-Wx-ab1">
+                <viewController storyboardIdentifier="CreateSighting" id="Ujs-Ni-SiF" customClass="CreateSighting" customModule="AnchorageMooseTracker_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="CreateSighting" id="gC2-Wx-ab1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="numberofMooseLabel" text="Number of Moose:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOv-X4-BFC">
-                                <rect key="frame" x="47" y="184" width="143" height="21"/>
+                                <rect key="frame" x="47" y="142" width="143" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="descriptionLabel" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emi-vJ-FGd">
-                                <rect key="frame" x="49" y="251" width="143" height="21"/>
+                                <rect key="frame" x="49" y="209" width="143" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="locationLabel" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thS-j0-6ug">
-                                <rect key="frame" x="49" y="318" width="143" height="26"/>
+                                <rect key="frame" x="49" y="276" width="143" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="mooseCountTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1, 2, 3, ect." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0h8-VL-4k3">
-                                <rect key="frame" x="47" y="213" width="97" height="30"/>
+                                <rect key="frame" x="47" y="171" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="descriptionTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What were they doing?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-EO-SMX">
-                                <rect key="frame" x="47" y="280" width="280" height="30"/>
+                                <rect key="frame" x="47" y="238" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="locationButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFp-te-Xxk">
-                                <rect key="frame" x="49" y="352" width="105" height="30"/>
+                                <rect key="frame" x="47" y="343" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Location"/>
                                 <connections>
@@ -122,8 +122,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="createSightingTitle" text="Create Moose Sighting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhz-ZK-QdY">
-                                <rect key="frame" x="53" y="107" width="268" height="32"/>
+                                <rect key="frame" x="53" y="67" width="268" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDh-aK-cTM">
+                                <rect key="frame" x="49" y="314" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D88-ts-ree">
+                                <rect key="frame" x="188" y="315" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,8 +155,10 @@
                         <outlet property="createSightingTitle" destination="Vhz-ZK-QdY" id="XN4-LB-ZPH"/>
                         <outlet property="descriptionLabel" destination="Emi-vJ-FGd" id="TZf-vd-4GE"/>
                         <outlet property="descriptionTextField" destination="S8t-EO-SMX" id="NVV-Yd-qCC"/>
+                        <outlet property="latitudeLabel" destination="aDh-aK-cTM" id="SNg-e4-pzQ"/>
                         <outlet property="locButton" destination="iFp-te-Xxk" id="Xiq-U7-HXX"/>
                         <outlet property="locationLabel" destination="thS-j0-6ug" id="iF2-0J-gBD"/>
+                        <outlet property="longitudeLabel" destination="D88-ts-ree" id="8xq-li-kO2"/>
                         <outlet property="mooseCountTextField" destination="0h8-VL-4k3" id="8ta-rR-L8D"/>
                         <outlet property="numberofMooseLabel" destination="XOv-X4-BFC" id="FjK-k4-vaU"/>
                         <outlet property="view" destination="gC2-Wx-ab1" id="oX2-Wn-Yjm"/>

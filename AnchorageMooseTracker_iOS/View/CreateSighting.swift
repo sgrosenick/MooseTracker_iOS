@@ -14,6 +14,8 @@ class CreateSighting: UIViewController {
     @IBOutlet weak var numberofMooseLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
     
     @IBOutlet weak var mooseCountTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -36,7 +38,15 @@ class CreateSighting: UIViewController {
         
         //setup Notification Center observer
         NotificationCenter.default.addObserver(forName: Notification.Name.mooseLocation, object: nil, queue: OperationQueue.main) { (notification) in
+            let mapVC = notification.object as! MapViewController
             
+            //hide set location button
+            self.locButton.isHidden = true
+            self.latitudeLabel.text = mapVC.latString
+            self.latitudeLabel.isHidden = false
+            
+            self.longitudeLabel.text = mapVC.lonString
+            self.longitudeLabel.isHidden = false
         }
 
     }

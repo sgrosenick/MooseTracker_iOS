@@ -20,7 +20,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var zoomLevel: Float = 18.0
     let setLocationbtn = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
     let locationInstruction = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
-    
+    var latString = String()
+    var lonString = String()
+    let createSightingVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateSighting")
     
     override func viewDidLoad() {
         
@@ -75,10 +77,13 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     @objc func buttonPressed(sender: UIButton) {
-        let latString: String = String(format: "%f", marker.position.latitude)
-        let lonString: String = String(format: "%f", marker.position.longitude)
+        latString = String(format: "%f", marker.position.latitude)
+        lonString = String(format: "%f", marker.position.longitude)
         print("Latitude: " + latString + ", Longitude: " + lonString)
         NotificationCenter.default.post(name: .mooseLocation, object: self)
+        
+        //change view controller back to CreateSighting
+        self.present(createSightingVC, animated: true, completion: nil)
     }
     
     //Allows user to add marker by tapping on the map
