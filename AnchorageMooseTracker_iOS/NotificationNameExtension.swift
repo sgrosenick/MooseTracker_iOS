@@ -10,4 +10,6 @@ import Foundation
 
 extension Notification.Name {
     static let mooseLocation = Notification.Name(rawValue: "mooseLocation")
+    static let mooseNumber = Notification.Name(rawValue: "mooseNumber")
+    static let mooseDescription = Notification.Name(rawValue: "mooseDescription")
 }
